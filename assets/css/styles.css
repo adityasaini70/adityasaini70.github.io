@@ -70,6 +70,7 @@ img{
   display: block;
 }
 
+
 /*===== CLASS CSS ===== */
 .contact-title{
   position: relative;
@@ -341,7 +342,49 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
-
+.dynamic-text {
+    display: inline-block;
+    height: 4vw;
+    overflow: hidden;
+}
+.dynamic-text li{
+    color: orange;
+    margin: 0 0 2% 5px;
+    position: relative;
+    width: fit-content;
+    animation: slid 18s steps(3) infinite;
+    -webkit-animation: slid 18s steps(3) infinite;
+}
+.dynamic-text li::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid orange;
+    left: 0;
+    background: darkslategray;
+    animation: typing 3s steps(12) infinite;
+    -webkit-animation: typing 3s steps(12) infinite;
+}
+@keyframes typing {
+    50%{left:100%}
+    100%{left:0%}
+}
+@keyframes slid {
+   
+     50%{
+         transform: translateY(calc(-15.5vw));
+         -webkit-transform: translateY(calc(-15.5vw));
+         -moz-transform: translateY(calc(-15.5vw));
+         -ms-transform: translateY(calc(-15.5vw));
+         -o-transform: translateY(calc(-15.5vw));
+}
+     100%{ transform: translateY(0px);
+         -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px); 
+          -ms-transform: translateY(0px); 
+          -o-transform: translateY(0px);}
+}
 
 /* ===== FOOTER =====*/
 .footer{
