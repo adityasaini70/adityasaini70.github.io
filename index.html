@@ -132,7 +132,19 @@
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-            	<p class="contact__text">For any collaborators wishing to connect, please mail me or give a shout out at LinkedIn or Facebook!</p><br>
+<div class="contact_container">
+                      <form action="https://formspree.io/f/mqkwpqdp" method="POST">
+                          <p style="text-align: center;">You can fill this form for any collaboration or employment related communication!</p>
+
+                          <!--Input  tag specifies an input field where the user can enter data-->
+                          <input type="text" placeholder="Name" name="Name" required autofocus>
+                            <input type="email" placeholder="Email" name="Email" required>
+                            <input type="tel" placeholder="Mobile Number" name="Mobile Number" required>
+                            <textarea placeholder="Message" name = "Message" required></textarea>
+                          
+                          <input type="submit" value="Submit">
+                      </form>
+                    </div>
             </section>
         </main>
 
